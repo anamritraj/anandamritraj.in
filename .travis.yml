@@ -5,6 +5,6 @@ node_js:
   - stable
 
 script:
-  - npm run lint
+  - npm install
   - npm run build
   - bash ./scripts/deploy-to-gh-pages.sh
