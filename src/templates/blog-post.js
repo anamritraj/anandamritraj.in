@@ -37,8 +37,9 @@ class BlogPostTemplate extends React.Component {
           {` • ${formatReadingTime(post.timeToRead)}`}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <hr></hr>
         <p>
-          <a
+          Help me improve this article: <a
             href={editUrl}
             target="_blank"
             rel="noopener noreferrer"
