@@ -7,4 +7,4 @@ node_js:
 script:
   - npm install
   - npm run build
-  - bash ./scripts/deploy-to-gh-pages.sh
+  - bash ./script/deploy-to-gh-pages.sh
