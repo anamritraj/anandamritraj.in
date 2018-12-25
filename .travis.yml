@@ -1,13 +1,10 @@
-language: node_js
-
 os:
   - linux
-  - osx
 
 node_js:
   - stable
 
 script:
-  - npm install
   - npm run lint
-  - npm run git-deploy
+  - npm run build
+  - bash ./scripts/deploy-to-gh-pages.sh
