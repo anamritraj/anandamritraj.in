@@ -6,6 +6,5 @@ node_js:
   - stable
 
 script:
-  - npm install
-  - npm run build
+  - yarn build
   - bash ./script/deploy-to-gh-pages.sh
