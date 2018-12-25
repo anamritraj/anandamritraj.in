@@ -1,5 +1,4 @@
 #!/bin/bash
-set -o errexit
 
 # config
 git config --global user.email "someone@travis.org"
@@ -10,4 +9,4 @@ cd ./public
 git init
 git add .
 git commit -m "Deploy to Github Pages"
-git push --force --quiet "https://${github_token}@$github.com/${repo}.git" master:gh-pages > /dev/null 2>&1
+git push --force "https://${github_token}@$github.com/${repo}.git" master:gh-pages
