@@ -6,6 +6,9 @@ git config --global user.name "Travis CI"
 
 # deploy
 cd ./public
+if [[ -z "${custom_domain}" ]]; then
+    echo "${custom_domain}" > CNAME
+fi
 git init
 git add .
 git commit -m "Deploy to Github Pages"
