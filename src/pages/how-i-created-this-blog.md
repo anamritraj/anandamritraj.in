@@ -88,7 +88,7 @@ Now that you have made changes to *your* site. Let's deploy it for the world to 
 If you don't have a Github account then its probably a good idea to create one now.
 
 Now let's create a new repository on Github. 
-Goto https://github.com/YOUR\_USERNAME?tab=repositories
+Goto https://github.com/YOUR_USERNAME?tab=repositories
 
 Click that big green button which says *New*. Give your repo a name and keep it Public. Don't select anything else and click Create Repository.
 
@@ -97,7 +97,7 @@ From your terminal, run
 # Rename any old origins if you have any
 git remote rename origin destination
 # Point to the newly created repository
-git remote add origin https://github.com/YOUR\_USERNAME/REPO\_NAME.git
+git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
 git push -u origin master
 # Now the usual stuff
 git add .
@@ -116,11 +116,11 @@ Now, there are 2 ways to deploy code and both use GitHub Pages to serve the stat
 
 If you look at the `package.json` file there is a `npm` script `git-deploy`. This will build the project and push everything in the `/public` directory to the `gh-pages` remote branch.
 
-From there you can go to repository settings here https://github.com/YOUR\_USERNAME/REPO\_NAME/settings and enable GitHub pages to use `gh-pages` branch.
+From there you can go to repository settings here https://github.com/YOUR_USERNAME/REPO_NAME/settings and enable GitHub pages to use `gh-pages` branch.
 
 Congratulations! You have successfully deployed your code and your website is live at 
 
-https://YOUR\_USERNAME.github.io/REPO\_NAME
+https://YOUR_USERNAME.github.io/REPO_NAME
 
 **WAY 2: The cool way, and less annoying, and less manual**
 
