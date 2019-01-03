@@ -9,7 +9,7 @@ As 2018 is closing, I thought I should recollect all the things I did good and b
 2017 was a great year. I graduated with a Computer Science degree and got my first job as a software engineer. Landed in a team which focuses on UI which is my interest. 
 
 ### Learnt advanced React.js
-2018 was the year when I learnt react advanced concepts. I learnt how to hookup a different state management libraries with React such as Redux and Apollo Client. All of this was not just theoretical by I am in process of making a full fledged side project which will actually have a purpose.
+2018 was the year when I learnt react advanced concepts. I learnt how to hookup a different state management libraries with React such as Redux and Apollo Client. All of this was not just theoretical and I am in process of making a full fledged side project which will actually have a purpose.
 
 ### Completed a side project and deployed to production
 It was the year when I completed a fairly complex application and deployed it to production all by myself. 
@@ -43,6 +43,6 @@ Though I was able to accomplish a lot in 2018 somehow I feel I neglected some im
 
 This is still a WIP and should be completed within a day or 2. The main focus will be DS and Algorithms, Fitness, OS contributions, Side-projects and automating a whole lot of stuff.
 
-Also, I will be more social that I was in 2019. So if you are my friend, expect a "Happy Birthday" text. Although, now that I think about it, I think that can be automated as well. 
+Also, I will be more social that I was in 2019. So if you are my friend, expect a "Happy Birthday" text. Although, now that I think about it, that can be automated as well. 
 
 Wait for an upcoming post that covers my plans for 2019. Till then Happy New Year! 
