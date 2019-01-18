@@ -212,8 +212,11 @@ function render(element, parent) {
 
 The entire code for this is available on [Github](https://github.com/anamritraj/my-react/blob/master/src/render.js).
 
+I made a [**codepen demo**](https://codepen.io/anamritraj/pen/aPgOPj) to demonstrate how you would use this in a real world application.
 ## Endnotes
 This was really fun! The entire code for this is available on [Github](https://github.com/anamritraj/my-react). This will be a series of posts where I will incrementally add features and post about my findings.
+
+
 
 I would love to know what features would you want me to implement next. Though I have only started, I plan to make this as close to original React as possible. It might never be production ready but I will learn a lot.
 
