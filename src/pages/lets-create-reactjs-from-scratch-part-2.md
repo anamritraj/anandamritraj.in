@@ -156,7 +156,7 @@ function createElement(type, config, ...args) {
 }
 ```
 
-The tree arguments are provided to the function by the transpiler (which is babel in our case). The third argument will contain all of the children of the current node. We are simply assigning the props to the `props` object, children to `props.children` object. Then return the object, this is something our `MyReact.render` function can work with!
+The three arguments are provided to the function by the transpiler (which is babel in our case). The third argument will contain all of the children of the current node. We are simply assigning the props to the `props` object, children to `props.children` object. Then return the object, this is something our `MyReact.render` function can work with!
 
 Well, that was pretty simple. But our render function `MyReact.render` expects the text elements to have a type of `TEXT_ELEMENT` and also a `nodeValue` prop. So let's do that!
 
