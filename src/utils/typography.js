@@ -9,7 +9,7 @@ Wordpress2016.overrideThemeStyles = () => ({
     boxShadow: 'none',
   },
   'p code': {
-    fontSize: '1.1rem'
+    fontSize: '1rem'
   },
   'ol': {
     paddingLeft: '1.3rem'

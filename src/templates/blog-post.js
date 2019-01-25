@@ -10,13 +10,14 @@ import { rhythm, scale } from '../utils/typography'
 
 const GITHUB_USERNAME = 'anamritraj'
 const GITHUB_REPO_NAME = 'anamritraj.tech'
-
+const PAGE_URL = 'https://anamritraj.tech'
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next, slug } = this.props.pageContext
     const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/src/pages/${slug.replace(/\//g, '')}.md`
+    const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(`${PAGE_URL}${slug}`)}`
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -39,12 +40,19 @@ class BlogPostTemplate extends React.Component {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr></hr>
         <p>
-          Help me improve this article: <a
+          <a
             href={editUrl}
             target="_blank"
             rel="noopener noreferrer"
           >
             Edit on GitHub
+          </a>
+          {` • `}
+          <a
+            href={discussUrl}
+            target="_blank"
+            rel="noopener noreferrer">
+          Discuss on Twitter
           </a>
         </p>
         <hr
