@@ -1,6 +1,6 @@
 ---
 title: Why this blog?
-date: "2018-12-24"
+date: '2018-12-24'
 spoiler: Let's talk about it.
 ---
 
@@ -14,9 +14,10 @@ I will walk you through each one of them in order.
 
 ## Me buying domain names
 
-Whenever I see a sale, I buy some domain names for any projects that I will make in future. Recently, I bought this anamritraj.tech. Didn't know what I would do with it until now!
+Whenever I see a sale, I buy some domain names for any projects that I will make in future. Recently, I bought this anandamritraj.in. Didn't know what I would do with it until now!
 
 ## Always looking for new tech stack
+
 Recently I heard about the JAM stack and wanted to try it. So here we are!
 
 ## Twitter

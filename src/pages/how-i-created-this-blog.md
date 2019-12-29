@@ -1,6 +1,6 @@
 ---
 title: How I created this blog?
-date: "2018-12-25"
+date: '2018-12-25'
 spoiler: Merry Christmas!
 ---
 
@@ -12,13 +12,13 @@ If you are not, you should. Let's unfold how it all works!
 
 The whole blog is a server-side rendered static website powered by [Gatsby.js](https://www.gatsbyjs.org/). If you are not living under a rock for the past few months you must have heard about it. Gatsby.js is an amazing piece of technology which lets you create super-fast websites with minimal code.
 
-It uses the power of React.js, web pack and modern JavaScript and CSS to build powerful web apps. As the backend you can use anything, for my case I will be using simple MarkDown files. Gatsby.js will automatically (read *magically*) convert you markdown files into HTML and load them as blog posts. And there are tons of plugins available to build additional features to your website. For instance, there are plugins which will convert your website into a Progressive Web App without you having to do anything.
+It uses the power of React.js, web pack and modern JavaScript and CSS to build powerful web apps. As the backend you can use anything, for my case I will be using simple MarkDown files. Gatsby.js will automatically (read _magically_) convert you markdown files into HTML and load them as blog posts. And there are tons of plugins available to build additional features to your website. For instance, there are plugins which will convert your website into a Progressive Web App without you having to do anything.
 
-Gatsby.js will generate static assets which can be served through any server which can handle HTML, CSS and JavaScript. This means that you can use Github Pages to host your website for free, *forever*. There are other *free* ways to host a Gatsby.js website but I will cover what I am using for this awesome website.
+Gatsby.js will generate static assets which can be served through any server which can handle HTML, CSS and JavaScript. This means that you can use Github Pages to host your website for free, _forever_. There are other _free_ ways to host a Gatsby.js website but I will cover what I am using for this awesome website.
 
 ## Why did I choose Gatsby.js?
 
-It's simple, easy to deploy and *hot* right now! Apart from that it is super fast, SEO friendly, responsive and provides a PWA out of the box without having to do much.
+It's simple, easy to deploy and _hot_ right now! Apart from that it is super fast, SEO friendly, responsive and provides a PWA out of the box without having to do much.
 
 ![Also this!](./metrics-25-05-2018.PNG)
 
@@ -37,31 +37,33 @@ I will assume you have the following things already, if not please search the in
 
 ### Step 1: Clone
 
-Clone [this repository](https://github.com/anamritraj/anamritraj.tech.git)
+Clone [this repository](https://github.com/anamritraj/anandamritraj.in.git)
+
 ```bash
-git clone https://github.com/anamritraj/anamritraj.tech.git
+git clone https://github.com/anamritraj/anandamritraj.in.git
 ```
 
 ### Step 2: Make changes
 
 Now that you have cloned this repository, move into that folder using you cmd/terminal and run
+
 ```bash
 yarn
 # or if you are an npm user
 npm install
 ```
+
 This will install all the project dependencies in your machine. Now, let's test this..
 
 ```bash
-yarn dev 
-# or 
+yarn dev
+# or
 npm run dev
 ```
 
 This will start the development server on http://localhost:8000.
 
-Go to `/src/pages/` and create a new file. Keep an eye on your browser. As soon as you hit save, the post will be reflected in the browser. This is Hot-reloading and one of the features I love the most. This is by far my favourite feature of Gatsby.js. 
-
+Go to `/src/pages/` and create a new file. Keep an eye on your browser. As soon as you hit save, the post will be reflected in the browser. This is Hot-reloading and one of the features I love the most. This is by far my favourite feature of Gatsby.js.
 
 Now before deploying a website with my name and photo on it (which I would love, but you probably don't want to) let's make some changes.
 
@@ -76,6 +78,7 @@ src/components/Bio.js
 src/templates/blog-post.js
 static/CNAME
 ```
+
 **Note**: If you are not planning to use a custom domain delete that `static/CNAME` file. Otherwise, add your domain there.
 
 There's one particular change which I would like to talk about. If you check the `/gatsby-config.js` file. There is a parameter called `pathPrefix`. If you are not planning to use a custom domain then you need to set it to `/REPO_NAME`. This will tell Gatsby.js to add the necessary path to links while navigating around your website.
@@ -83,16 +86,18 @@ There's one particular change which I would like to talk about. If you check the
 These are all the files where you will have make changes to customize the names and some variables. I'll leave the exact changes for you to explore.
 
 ### Step 3: Deploy!
-Now that you have made changes to *your* site. Let's deploy it for the world to see. We are going to use Github Pages for this.
+
+Now that you have made changes to _your_ site. Let's deploy it for the world to see. We are going to use Github Pages for this.
 
 If you don't have a Github account then its probably a good idea to create one now.
 
-Now let's create a new repository on Github. 
+Now let's create a new repository on Github.
 Goto https://github.com/YOUR_USERNAME?tab=repositories
 
-Click that big green button which says *New*. Give your repo a name and keep it Public. Don't select anything else and click Create Repository.
+Click that big green button which says _New_. Give your repo a name and keep it Public. Don't select anything else and click Create Repository.
 
 From your terminal, run
+
 ```bash
 # Rename any old origins if you have any
 git remote rename origin destination
@@ -105,9 +110,9 @@ git commit -m "Initial commit"
 git push -u origin master
 ```
 
-Reload the page on GitHub and you should see the code there. 
+Reload the page on GitHub and you should see the code there.
 
-Now, there are 2 ways to deploy code and both use GitHub Pages to serve the static files. 
+Now, there are 2 ways to deploy code and both use GitHub Pages to serve the static files.
 
 1. Use your terminal to deploy to `gh-pages` branch
 2. Use Travis-CI to deploy your static assets
@@ -118,7 +123,7 @@ If you look at the `package.json` file there is a `npm` script `git-deploy`. Thi
 
 From there you can go to repository settings here https://github.com/YOUR_USERNAME/REPO_NAME/settings and enable GitHub pages to use `gh-pages` branch.
 
-Congratulations! You have successfully deployed your code and your website is live at 
+Congratulations! You have successfully deployed your code and your website is live at
 
 https://YOUR_USERNAME.github.io/REPO_NAME
 
@@ -130,14 +135,16 @@ Now that you have this setup, go to Travis dashboard, choose your repository, Go
 
 Let's add a couple of environment variables which are used in our `/script/deploy-to-gh-pages.sh` script.
 The first one is the path of your repo
+
 ```bash
 repo_path = YOUR_GITHUB_USERNAME/REPO_NAME
-# In my case it is anamritraj/anamritraj.tech
+# In my case it is anamritraj/anandamritraj.in
 ```
 
 The second one is a GitHub API key. Goto [this page](https://github.com/settings/tokens) and click generate new token. Select the first checkbox which says `repo`. Give your token a name. Now make sure you save this somewhere safe, treat it like your password and don't share it with anyone.
 
 Now, back to the Travis settings page, add another environment variable.
+
 ```bash
 github_token = YOUR_TOKEN
 ```
