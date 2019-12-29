@@ -1,4 +1,4 @@
-# anamritraj.tech
+# anandamritraj.in
 
 [![Build Status](https://travis-ci.com/anamritraj/anamritraj.tech.svg?branch=master)](https://travis-ci.com/anamritraj/anamritraj.tech)
 

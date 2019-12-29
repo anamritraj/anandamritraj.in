@@ -10,14 +10,19 @@ import { rhythm, scale } from '../utils/typography'
 
 const GITHUB_USERNAME = 'anamritraj'
 const GITHUB_REPO_NAME = 'anamritraj.tech'
-const PAGE_URL = 'https://anamritraj.tech'
+const PAGE_URL = 'https://anandamritraj.in'
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next, slug } = this.props.pageContext
-    const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/src/pages/${slug.replace(/\//g, '')}.md`
-    const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(`${PAGE_URL}${slug}`)}`
+    const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/src/pages/${slug.replace(
+      /\//g,
+      ''
+    )}.md`
+    const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
+      `${PAGE_URL}${slug}`
+    )}`
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -25,6 +30,7 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.spoiler}
           slug={post.fields.slug}
         />
+        <Link to={'/blog'}>← Back to Blog list</Link>
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
@@ -40,19 +46,14 @@ class BlogPostTemplate extends React.Component {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr></hr>
         <p>
-          <a
-            href={editUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link to={'/blog'}>Back to Blog list</Link>
+          {` • `}
+          <a href={editUrl} target="_blank" rel="noopener noreferrer">
             Edit on GitHub
           </a>
           {` • `}
-          <a
-            href={discussUrl}
-            target="_blank"
-            rel="noopener noreferrer">
-          Discuss on Twitter
+          <a href={discussUrl} target="_blank" rel="noopener noreferrer">
+            Discuss on Twitter
           </a>
         </p>
         <hr
@@ -74,34 +75,36 @@ class BlogPostTemplate extends React.Component {
             }}
             to={'/'}
           >
-            anamritraj.tech
+            {siteTitle}
           </Link>
         </h3>
         <Bio />
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+        <nav>
+          <ul
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'space-between',
+              listStyle: 'none',
+              padding: 0,
+            }}
+          >
+            <li>
+              {previous && (
+                <Link to={'/blog' + previous.fields.slug} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={'/blog' + next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </li>
+          </ul>
+        </nav>
       </Layout>
     )
   }

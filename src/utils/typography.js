@@ -9,14 +9,14 @@ Wordpress2016.overrideThemeStyles = () => ({
     boxShadow: 'none',
   },
   'p code': {
-    fontSize: '1.1rem'
+    fontSize: '1.1rem',
   },
-  'ol': {
-    paddingLeft: '1.3rem'
+  ol: {
+    paddingLeft: '1.3rem',
   },
   'ol li': {
-    marginBottom: '0'
-  }
+    marginBottom: '0',
+  },
 })
 
 delete Wordpress2016.googleFonts
