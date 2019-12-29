@@ -9,7 +9,7 @@ import { formatReadingTime } from '../utils/helpers'
 import { rhythm, scale } from '../utils/typography'
 
 const GITHUB_USERNAME = 'anamritraj'
-const GITHUB_REPO_NAME = 'anamritraj.tech'
+const GITHUB_REPO_NAME = 'anandamritraj.in'
 const PAGE_URL = 'https://anandamritraj.in'
 class BlogPostTemplate extends React.Component {
   render() {
