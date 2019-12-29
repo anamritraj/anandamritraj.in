@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'anamritraj.tech',
+    title: 'anandamritraj.in',
     author: 'Anand Raj',
-    description:
-      'Personal blog by Anand Raj. Learning by doing.',
-    siteUrl: 'https://anamritraj.tech',
+    description: 'Personal blog by Anand Raj. Learning by breaking stuff.',
+    siteUrl: 'https://anandamritraj.in',
     social: {
       twitter: '@anamritraj',
     },
@@ -59,8 +58,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `anamritraj.tech`,
-        short_name: `anamritraj.tech`,
+        name: `anandamritraj.in`,
+        short_name: `anandamritraj.in`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#d23636`,
@@ -75,6 +74,6 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
   ],
 }
