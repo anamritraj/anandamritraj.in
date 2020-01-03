@@ -88,8 +88,8 @@ export default function Homepage() {
               >
                 {' '}
                 Résumé
-              </a>
-              . or follow me on{' '}
+              </a>{' '}
+              or follow me on{' '}
               <a target="_blank" href="https://twitter.com/anamritraj">
                 Twitter
               </a>
