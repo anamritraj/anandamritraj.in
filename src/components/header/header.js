@@ -11,13 +11,12 @@ export default function header() {
             <Link to={'/blog'}>Blog</Link>
           </li>
           <li>
-            <a href="">Github</a>
+            <a href="https://github.com/anamritraj" target="_blank">
+              Github
+            </a>
           </li>
           <li>
-            <a href="">Resume</a>
-          </li>
-          <li>
-            <a href="">Twitter</a>
+            <a href="https://twitter.com/anamritraj">Twitter</a>
           </li>
         </ul>
       </nav>
