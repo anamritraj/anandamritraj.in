@@ -81,14 +81,6 @@ export default function Homepage() {
               >
                 projects{' '}
               </a>{' '}
-              or my{' '}
-              <a
-                href="https://drive.google.com/open?id=0B9bDWnSy5gZAWnVkUTBnNWtNcVE"
-                target="_blank"
-              >
-                {' '}
-                Résumé
-              </a>{' '}
               or follow me on{' '}
               <a target="_blank" href="https://twitter.com/anamritraj">
                 Twitter
