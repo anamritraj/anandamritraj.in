@@ -5,7 +5,8 @@ spoiler: Why I am learning Vim in 2020?
 ---
 
 
-Wow, it has been a long time since I wrote anything on this blog. To be honest the last year was a bit too much. And surpisingly this year is no better.
+
+Wow, it has been a long time since I wrote anything on this blog. To be honest the last year was a bit too much. And surprisingly this year is no better.
 
 
 Anyways, just like everyone, I am using this quarantine to skill up and make good use of it. I am picking up things I always wanted to do and one of those things was learning Vim.
@@ -15,7 +16,7 @@ I have seen a lot of tutorials with people using Vim which mostly confused me. L
 
 ## Problems with IDEs
 
-Well turns out, if you start spending 10+ hours writing code everyday, you realize that using a mouse is actually slower. Like really slow. Hear me out. If you use VSCode/Any other editor it has some basic issues which become annoying. 
+Well, turns out, if you start spending 10+ hours writing code everyday, you realise that using a mouse is actually slower. Like really slow. Hear me out. If you use VSCode/Any other editor it has some basic issues which become annoying. 
 - You constantly have to switch your right hand between the keyboard and mouse. That takes around 0.75 seconds for me (This includes the time to position my hand properly on the mouse, move the mouse around and 0.5s more when I switch back my hand to keyboard).
 - You have to point your mouse to tiny icons on the screen, which at 4.30AM in the morning is just too much to ask of me.
 - On a good day, loading up IntelliJ easily takes 10 seconds out of my life. And then starts the indexing process which takes forever!
@@ -26,11 +27,11 @@ Well turns out, if you start spending 10+ hours writing code everyday, you reali
 
 But what makes Vim so good that I want to learn it? Well I am still to experience the benefits myself as I have literally just started. But here are some good things I heard about it:
 - It is fast. It is always going to be faster than your normal IDEs since it has a lot less UI to process.
-- It is higly customizable. There are plugins for almost anything you can think of. Anything you can do in any other IDE, you can do it in Vim too and probably faster. 
+- It is highly customizable. There are plugins for almost anything you can think of. Anything you can do in any other IDE, you can do it in Vim too and probably faster. 
 - Since Vim is on almost all the servers, you can literally use the same Vim setup on any machine you SSH into by just downloading your `.vimrc` file and BOOM! you feel right at home.
 - You forget about your mouse. Since I started using it I have realised how fast I am without a mouse/trackpad. 
 - Also, if you are staring up with Vim, DO NOT USE THE ARROW KEYS. I read this in a lot of posts. Well it is true. Hear me out. Time to switch to your arrow keys is easily `0.25s` and if you are not a touch typer (I am not) you are even slower when you come back to the home rows because you have to position your hands back to where they were. But if you use `h`, `j`, `k` and `l` to navigate around, it really becomes easy to just keep your hands at one place and enjoy typing!
-- There are things called motions, tags and macros which make our life much easier. This is not a post about them since I am yet to use any of them, but yeah they are a big part of the Vim experice. Maybe we can talk about them in the next part.
+- There are things called motions, tags and macros which make our life much easier. This is not a post about them since I am yet to use any of them, but yeah they are a big part of the Vim experience. Maybe we can talk about them in the next part.
 
 ## I am sold, let's start!
 
@@ -44,14 +45,13 @@ Okay, so one more thing. There is a thing called `.vimrc` I talked about, that i
 
 ## What all plugins to Install??
 
-There are a lot of Vim plugins and a lot more `.vimrc` files available on the web. **A quick search on Github returns around 19,519 repository results**. This is just mindblowing and you will never be able to go through all those `.vimrc` files. 
+There are a lot of Vim plugins and a lot more `.vimrc` files available on the web. **A quick search on Github returns around 19,519 repository results**. This is just mind-blowing and you will never be able to go through all those `.vimrc` files. 
 
-The approach I am taking on is to create my own `.vimrc` file from scratch by adding plugins and settings on need basis rather than blindly copying/using someone else's `.vimrc` file. I am still looking at other people's vimrc's and adding bits and peices here and there but only after understanding what it does and is it actually adding any value to my flow.
+The approach I am taking on is to create my own `.vimrc` file from scratch by adding plugins and settings on need basis rather than blindly copying/using someone else's `.vimrc` file. I am still looking at other people's vimrc's and adding bits and pieces here and there but only after understanding what it does and is it actually adding any value to my flow.
 
 The ones I have added for now are [Vundler](https://github.com/VundleVim/Vundle.vim), [NerdTree](https://github.com/preservim/nerdtree) and Enable Line Numbers! :D
 
-Anyways for those interested, I am adding my `.vimrc` on gihtub hoping it would motivate someone to use Vim in 2020 and beyond (If we make it past 2020).
+Anyways for those interested, I am adding my `.vimrc` on Github hoping it would motivate someone to use Vim in 2020 and beyond (If we make it past 2020).
 
 
-[My super slim vim configuration](https://github.com/anamritraj/vimrc)
- 
+[My super slim vim configuration](https://github.com/anamritraj/vimrc) 
